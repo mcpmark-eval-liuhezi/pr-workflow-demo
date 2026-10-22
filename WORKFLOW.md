@@ -46,7 +46,7 @@ Push the branch and open a [pull request](https://github.com/mcpmark-eval-liuhez
 A good PR is small, has a clear description, and references its issue.
 
 ### 5. Watch the status checks
-Before merging, look at what the PR's status and checks report. On PR #2 the commit status reported **success** and no failing CI checks were blocking the merge. If checks had failed, you'd push fixes to the same branch and the PR would update automatically — no new PR needed.
+Before merging, look at what the PR's status and checks actually report. On PR #2 the commit status reported **pending with 0 checks** — no CI workflows were configured on this fresh repository, so nothing was running and nothing was failing — and the PR was mergeable with state `clean`, so nothing blocked the merge. If checks had failed, you'd push fixes to the same branch and the PR would update automatically — no new PR needed.
 
 ### 6. Merge
 Once the checks pass and the PR is approved, merge it. GitHub then shows the pull request as **merged**, and the `main` branch contains your change.
